@@ -9,6 +9,7 @@
     <color name="theme_white">#F5F2F2</color>
     <color name="theme_red">#F44336</color>
     <color name="splash">#0a55a2</color>
+    <color name="yellow">#FFEB3B</color>
 
     <color name="navigation_item_background">#444444</color>
     <color name="navigation_item_background_light">#DDDDDD</color>

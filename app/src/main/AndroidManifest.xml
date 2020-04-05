@@ -25,26 +25,23 @@
             </intent-filter>
         </activity>
 
+        <receiver android:name=".game.msgs.BroadcastReceiverHelper"/>
+
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
 
         <activity
-            android:name=".popup.SettingsActivity"
-            android:label="@string/title_activity_settings"
-            android:theme="@style/AppTheme.PopUp" />
-        <activity
-            android:name=".SnakeActivity"
+            android:name=".AchifActivity"
             android:screenOrientation="fullSensor" />
         <activity
-            android:name=".popup.PopMenu"
-            android:theme="@style/AppTheme.PopUp" />
+            android:name=".MenuActivity" />
         <activity
-            android:name=".popup.PopStart"
-            android:theme="@style/AppTheme.PopUp" />
-        <activity
-            android:name=".popup.PopStatistics"
-            android:theme="@style/AppTheme.PopUp" />
+            android:name=".HelloActivity" />
+
     </application>
 
 </manifest>

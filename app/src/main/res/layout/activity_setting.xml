@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:text="@string/point_of_view"
+        android:text="@string/p_view"
         app:layout_constraintBottom_toBottomOf="@+id/controlButton"
         app:layout_constraintEnd_toStartOf="@+id/dualRadio"
         app:layout_constraintStart_toEndOf="@+id/controlButton"

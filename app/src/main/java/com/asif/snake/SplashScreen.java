@@ -7,19 +7,19 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 
-import com.asif.snake.game.ObjectTools;
+import com.asif.snake.game.tools.ObjectTools;
 
 public class SplashScreen extends Activity {
-    private final int SPLASH_SCREEN_LENGTH = 3000;
-    private SharedPreferences  preferences = getSharedPreferences("dv", Context.MODE_PRIVATE);
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        SharedPreferences preferences = getSharedPreferences("dv", Context.MODE_PRIVATE);
         String result = preferences.getString("dv-data", "");
         if (result.isEmpty()){
             setContentView(R.layout.splash_screen);
+            int SPLASH_SCREEN_LENGTH = 3000;
             new Handler().postDelayed(() -> {
-                Intent mainIntent = new Intent(SplashScreen.this, SnakeActivity.class);
+                Intent mainIntent = new Intent(SplashScreen.this, AchifActivity.class);
                 SplashScreen.this.startActivity(mainIntent);
                 SplashScreen.this.finish();
             }, SPLASH_SCREEN_LENGTH);
